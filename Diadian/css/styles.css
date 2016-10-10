@@ -1,0 +1,448 @@
+
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+header {
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+footer {
+  margin-top: 5px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #800000;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  color: black;
+  font-family: 'Audiowide', cursive;
+}
+
+footer a {
+  font-family: 'Audiowide', cursive;
+  color: black; 
+}
+
+footer a:hover{
+  color: white;
+}
+
+footer h5 {
+  font-size: 0.7em;
+}
+
+#contact {
+  background-color: blue; 
+  color: black ;
+  margin: 15px; 
+}
+
+
+h1 {
+  font-family: 'Revalia', cursive;
+}
+
+h3 {
+  font-size: 3em;
+  text-align: center;
+  width: 75vw;
+  margin: auto;
+  color: #800000;
+  font-weight: bold;
+  z-index: 999;
+  margin-top: 100px;
+  font-family: 'Audiowide', cursive;
+  position: relative;
+}
+
+li a{
+  color: #800000;
+  font-family: 'Audiowide', cursive;
+}
+
+a:hover {
+  color: #cc0000;
+}
+
+header, .container, .navbar, .navar-default, .navbar-fixed-top, #navbar, .navbar-collapse, .collapsed, .navbar-header {
+	margin: 0px;
+	padding: 0;
+}
+
+@keyframes patch {
+From {left:0px; bottom:0px;}
+	To {left:100px; bottom:30px;}
+
+}
+
+#DiadianColumn1 {
+	height: auto;
+	width: 50%;
+	float: left;
+	clear: left;
+}
+
+#DiadianColumn1 img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#patchcord {
+	animation-duration: 5s;
+  position: relative;
+	animation-name: patch;
+	z-index: 50;
+	background-color: transparent;
+    /* animation-direction: alternate; */
+  /* animation-iteration-count: infinite; */
+  animation-fill-mode: forwards;
+}
+
+
+
+#DiadianColumn2 {
+	float: right;
+	clear: right;
+  width: 50%;
+  font-family: 'Press Start 2P';
+  display: inline-block;
+}
+
+
+#header-nav{
+	background-color: #800000;
+}
+
+
+#Diadianlogo {
+  	width: 150px;
+  	height: 150px;
+  	margin: 0px 15px 0px 0;
+	/* border: 5px solid black; */
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	}
+
+#Diadiantitle {
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 500px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	margin:0 auto;
+	display: table;
+	position: relative;
+	font-size: 2.0em;
+  color: black;
+}
+
+#Diadiantitle:hover {
+  color: white;
+}
+
+#navbar {
+	float: right;
+	width: 100vw;
+	height: 50px;
+	background-color: black;
+	clear: left;
+	z-index: 3
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+
+#navbar li {
+	display: inline;
+	text-decoration: none;
+	float: left;
+	width: 25vw;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 0.9em;
+	z-index: 999;
+
+}
+
+
+.jumbotron {
+	background-image: url("../images/towers.jpg");
+	height: 650px;
+	margin-top: 200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.icon-bar
+{
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px;
+    border:1px solid #444;
+}
+
+.navbar-toggle
+{
+    position:relative;
+    float:right;
+    padding:9px 10px;
+    margin-top:8px;
+    margin-right:15px;
+    margin-bottom:8px;
+    background-color: white;
+    background-image:none;
+    border:1px solid #444;          /* added line */
+    border-radius:4px;
+
+}
+	
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #Diadianlogo {
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0px;
+    z-index: 999;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .jumbotron {
+    height: 500px;
+  }
+  /* End Home Page */
+}
+/**** End Medium devices only *****/
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  header {
+  	height: 20vw;
+  	padding: 0;
+  	margin: auto;
+  	width: 100vw;
+  }
+
+#DiadianColumn1 {
+  width: 100%;
+}
+
+#DiadianColumn2 {
+  width: 100%;
+  
+}
+
+
+#patchcord {
+  animation-duration: 0s;
+  animation-fill-mode: backwards;
+}
+
+#Diadiantitle {
+	float: left;
+	padding: 0;
+	margin-left: 0;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 1.3em;
+	width: 50vw;
+}
+
+header, .navbar-fixed-top, #header-nav, .navbar-header, #navbar{
+	height: auto;
+}
+
+.jumbotron {
+	margin-top: 0;
+}	
+
+#nav-listitems {
+	width: 100vw;
+	z-index: 999;
+	padding: 0;
+	margin: 0;
+}
+
+  #navbar li {
+	width: 100vw;
+}  
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+}
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+
+#DiadianColumn1 {
+  width: 100%;
+  }
+#DiadianColumn1 img{
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DiadianColumn2 {
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+  
+}
+
+#patchcord {
+  animation-duration: 0s;
+  animation-fill-mode: backwards;
+}
+
+
+#Diadiantitle {
+	float: left;
+	padding: 0;
+	margin-left: 0;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 1.3em;
+	width: 50vw;
+}
+
+#navbar {
+	float: right;
+}
+
+#nav-listitems {
+	width: 100vw;
+	z-index: 999;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	width: 100vw;
+	z-index: 999;
+	padding: 0;
+	margin: 0;
+}
+
+header, .navbar-fixed-top, #header-nav, .navbar-header, #navbar{
+	height: auto;
+}
+
+.jumbotron {
+	margin-top: 0;
+}	
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+    .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
